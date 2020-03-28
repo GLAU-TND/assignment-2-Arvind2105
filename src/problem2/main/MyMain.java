@@ -36,6 +36,11 @@ public class MyMain {
     }
 
     public static void traversePostOrder(TreeNode<Integer> currentNode) {
+        if (currentNode != null) {
+            traversePostOrder(currentNode.getLeftChild());
+            traversePostOrder(currentNode.getRightChild());
+            System.out.print(currentNode.getData() + " ");
+        }
 
     }
 }
