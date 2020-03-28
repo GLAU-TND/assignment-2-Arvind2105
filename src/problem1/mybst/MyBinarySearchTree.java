@@ -13,4 +13,8 @@ public class MyBinarySearchTree<E> {
     public int numberOFLeftChild = 0;
     private TreeNode<E> root;
     private int maxLevel = 0;
+
+    public TreeNode<E> getRoot() {
+        return root;
+    }
 }
