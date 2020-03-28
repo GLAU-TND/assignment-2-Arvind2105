@@ -40,6 +40,13 @@ public class MyBinarySearchTree<E> {
         if (maxLevel < level) {
             System.out.print(node.getData() + " ");
         }
+        maxLevel = level;
+        if (node.getLeftChild() == null) {
+            numberOFLeftChild++;
+            maxLevel++;
+        }
+        printLeftChild(node.getLeftChild(), level + 1);
+        printLeftChild(node.getRightChild(), level = 1);
 
     }
 }
