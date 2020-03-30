@@ -18,6 +18,13 @@ public class MyQueue<E> {
         return size;
     }
 
+    public E dequeue() {
+        E data = front.getData();
+        front = front.getNext();
+        size--;
+        return data;
+    }
+
     public E peek() {
         E data = front.getData();
         return data;
