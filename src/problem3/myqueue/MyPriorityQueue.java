@@ -13,6 +13,17 @@ public class MyPriorityQueue<E> {
     private Node<E> front;
     private Node<E> rear;
 
+    private Node<E> getNode(int index) {
+        Node<E> response = front;
+        for (int i = 0; i < index && front != null; i++) {
+            response = response.getNext();
+
+        }
+        return response;
+
+    }
+
+
     public E remove() {
         E data = front.getData();
         front = front.getNext();
@@ -22,11 +33,7 @@ public class MyPriorityQueue<E> {
 
     private void sortedAdd(E data) {
         Node<E> node = new Node<>(data);
-
-
     }
-
-
         public E peek () {
             E data = front.getData();
             return data;
@@ -36,4 +43,4 @@ public class MyPriorityQueue<E> {
 
         }
 }
-}
+
