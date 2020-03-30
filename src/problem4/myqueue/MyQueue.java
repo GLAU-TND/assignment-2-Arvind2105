@@ -18,6 +18,11 @@ public class MyQueue<E> {
         return size;
     }
 
+    public E peek() {
+        E data = front.getData();
+        return data;
+    }
+
     public boolean isEmpty() {
         return size == 0;
     }
