@@ -8,7 +8,7 @@ package problem3.node;
 
 public class Node<E> {
     private E data;
-    private Node<E> next;
+    public Node<E> next;
 
     public Node(E data) {
         this.data = data;
@@ -18,6 +18,7 @@ public class Node<E> {
         this.data = data;
         this.next = next;
     }
+
 
     public E getData() {
         return data;
