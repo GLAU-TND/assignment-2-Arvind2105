@@ -20,13 +20,16 @@ public class MyPriorityQueue<E> {
         return data;
     }
 
-    public E peek() {
-        E data = front.getData();
-        return data;
-    }
+    private void sortedAdd(E data) {
 
-    public void add(E data) {
 
-    }
+        public E peek () {
+            E data = front.getData();
+            return data;
+        }
+
+        public void add (E data){
+
+        }
 }
 }
