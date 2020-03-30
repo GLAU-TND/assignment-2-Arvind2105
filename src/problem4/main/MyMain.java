@@ -6,6 +6,8 @@
  */
 package problem4.main;
 
+import problem1.mybst.MyBinarySearchTree;
+
 import java.util.Scanner;
 
 // executable class
@@ -16,5 +18,11 @@ public class MyMain {
         System.out.println("Enter elements which are added in binary search tree");
         String s = sc.nextLine();
         String[] ar = s.split(" ");
+        MyBinarySearchTree<Integer> myBinarySearchTree = new MyBinarySearchTree<>();
+        for (String s1 : ar) {
+            myBinarySearchTree.add(Integer.parseInt(s1));
+
+        }
+
     }
 }
