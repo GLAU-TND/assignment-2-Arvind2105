@@ -18,4 +18,8 @@ public class MyQueue<E> {
         return size;
     }
 
+    public boolean isEmpty() {
+        return size == 0;
+    }
+
 }
