@@ -43,4 +43,10 @@ public class MyMain {
         return myQueue;
 
     }
+
+    public static MyQueue getQueuePreOrderSuccessor(MyQueue myQueue) {
+        myQueue.dequeue();
+        return myQueue;
+
+    }
 }
