@@ -24,4 +24,9 @@ public class MyPriorityQueue<E> {
         E data = front.getData();
         return data;
     }
+
+    public void add(E data) {
+
+    }
+}
 }
